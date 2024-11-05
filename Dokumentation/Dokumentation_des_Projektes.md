@@ -26,7 +26,6 @@ Die Motivation hinter dieser Idee ist es, eine einfache und effiziente Kommunika
 | GET     | /benutzer/{id} | Gibt Details zu einem bestimmten Benutzer zurück          | Benutzer-ID                                |
 | PUT     | /benutzer/{id} | Aktualisiert die Informationen eines bestimmten Benutzers | Benutzer-ID, Aktualisierte Daten           |
 | DELETE  | /benutzer/{id} | Löscht einen bestimmten Benutzer                          | Benutzer-ID                                |
-| ------- | -------------- | --------------------------------------------------------- | ------------------------------------------ |
 
 ### Nachrichtensystem
 
