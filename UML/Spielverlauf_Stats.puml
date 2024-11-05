@@ -1,0 +1,7 @@
+@startuml Spielverlauf_Stats
+entity Spielverlauf_Stats {
+  * ID : int
+  * Fortschritt : string
+  * Statistiken : string
+}
+@enduml

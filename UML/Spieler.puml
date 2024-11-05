@@ -1,0 +1,9 @@
+@startuml Spieler
+entity Spieler {
+  * ID : int
+  * Name : string
+  * Attribute : string
+  * Ausrüstung : string
+  * Fortschritt : string
+}
+@enduml

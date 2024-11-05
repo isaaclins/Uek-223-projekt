@@ -1,0 +1,7 @@
+@startuml Loot
+entity Loot {
+  * ID : int
+  * Item : string
+  * Wert : int
+}
+@enduml
