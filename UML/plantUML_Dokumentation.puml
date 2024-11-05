@@ -1,0 +1,31 @@
+@startuml
+entity Benutzer {
+    Benutzer-ID : String
+    Name : String
+    E-Mail : String
+    Passwort : String
+}
+
+entity Nachrichten {
+    Absender : Benutzer
+    Empfänger : Benutzer
+    Zeitstempel : Date
+    Inhalt : String
+}
+
+entity Gruppenmitglieder {
+    Benutzer : Benutzer
+    Gruppe : Gruppen
+    Admin : Boolean
+}
+
+entity Gruppen {
+    Gruppenname : String
+    Mitglieder : List<Benutzer>
+}
+
+Benutzer "1" -- "0..*" Nachrichten : sendet
+Benutzer "1" -- "0..*" Nachrichten : empfängt
+Benutzer "0..*" -- "0..*" Gruppenmitglieder : ist Mitglied von
+Gruppen "1" -- "0..*" Gruppenmitglieder : hat Mitglieder
+@enduml

@@ -1,7 +1,0 @@
-@startuml Dungeons
-entity Dungeons {
-  * ID : int
-  * Level-Struktur : string
-  * Details : string
-}
-@enduml

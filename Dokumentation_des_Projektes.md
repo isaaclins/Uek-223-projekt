@@ -1,13 +1,16 @@
-# Projektidee
-Ein Roguelike-RPG, in dem der Spieler eine zufallsgenerierte Welt mit dynamischen Dungeons, Feinden und Loot erkundet. Jede Runde startet mit einem neuen Charakter, dessen Fähigkeiten und Ausrüstung durch das Spiel entwickelt werden. Der Fokus liegt auf taktischen Kämpfen und Entscheidungsfreiheit.
+# Projektidee: MultiUser Messaging Page
 
-# Entitäten/Datenbank-Tabellen
-1. **Spieler** (mit Attributen, Ausrüstung, Fortschritt)
-2. **Gegner** (verschiedene Arten und Stärken)
-3. **Dungeons** (mit Level-Strukturen und -Details)
-4. **Loot** (Items und deren Werte)
-5. **Verbundene Kreaturen** (zusätzliche spielbare Einheiten)
-6. **Spielverlauf/Stats** (für Fortschritt und Statistiken)
+## Beschreibung der Projektidee
 
-# Motivation
-Das Spiel bietet die perfekte Mischung aus Taktik und Abwechslung und ist ideal für Spieler, die nach einer Herausforderung suchen. Für mich persönlich wäre es ein fesselndes und wiederspielbares Erlebnis, das durch eine innovative Spielmechanik und dynamisches Gameplay überzeugt.
+Die Projektidee ist die Entwicklung einer MultiUser Messaging Seite, auf der Benutzer mit einer eindeutigen Benutzer-ID miteinander kommunizieren können. Benutzer können entweder private Nachrichten senden oder Gruppenchats erstellen. Die Plattform ähnelt Discord, bietet jedoch nur einen Kanal für die Kommunikation.
+
+## Entitäten
+
+- **Benutzer**: Enthält Informationen über die Benutzer wie Benutzer-ID, Name, E-Mail, etc.
+- **Nachrichten**: Speichert die gesendeten Nachrichten mit Details wie Absender, Empfänger, Zeitstempel, etc.
+- **Gruppen**: Informationen über die verschiedenen Gruppen, die erstellt werden können, einschließlich Gruppenname und Mitglieder.
+- **Gruppenmitglieder**: Verknüpft Benutzer mit Gruppen und speichert ihre Rollen innerhalb der Gruppe.
+
+## Motivation
+
+Die Motivation hinter dieser Idee ist es, eine einfache und effiziente Kommunikationsplattform zu schaffen, die sowohl private als auch Gruppennachrichten unterstützt. Persönlich könnte diese Plattform nützlich sein, um mit Freunden und Kollegen in Kontakt zu bleiben, ohne die Komplexität und die Vielzahl an Funktionen anderer Messaging-Dienste.

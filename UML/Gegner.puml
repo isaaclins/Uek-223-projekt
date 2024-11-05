@@ -1,7 +1,0 @@
-@startuml Gegner
-entity Gegner {
-  * ID : int
-  * Art : string
-  * Stärke : int
-}
-@enduml
