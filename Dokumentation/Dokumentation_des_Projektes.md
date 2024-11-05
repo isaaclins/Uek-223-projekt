@@ -16,22 +16,23 @@ Die Projektidee ist die Entwicklung einer MultiUser Messaging Seite, auf der Ben
 Die Motivation hinter dieser Idee ist es, eine einfache und effiziente Kommunikationsplattform zu schaffen, die sowohl private als auch Gruppennachrichten unterstützt. Persönlich könnte diese Plattform nützlich sein, um mit Freunden und Kollegen in Kontakt zu bleiben, ohne die Komplexität und die Vielzahl an Funktionen anderer Messaging-Dienste.
 
 ## API-Endpunkte
-| Methode | Endpunkt | Beschreibung                 |
-|---------|----------|------------------------------|
-| GET     | /benutzer                               | Gibt eine Liste aller Benutzer zurück                                                 |
-| POST    | /benutzer                               | Erstellt einen neuen Benutzer                                                         |
-| GET     | /benutzer/{id}                          | Gibt Details zu einem bestimmten Benutzer zurück                                      |
-| PUT     | /benutzer/{id}                          | Aktualisiert die Informationen eines bestimmten Benutzers                             |
-| DELETE  | /benutzer/{id}                          | Löscht einen bestimmten Benutzer                                                      |
-| GET     | /chat/{benutzerid}                      | Gibt eine Liste aller Nachrichten zwischen bestimmten Benutzers zurück                |
-| POST    | /chat/{benutzerid}                      | Sendet eine neue Nachricht an einen bestimmten Benutzer                               |
-| GET     | /gruppen                                | Gibt eine Liste aller Gruppen zurück                                                  |
-| POST    | /gruppen                                | Erstellt eine neue Gruppe                                                             |
-| GET     | /gruppen/{id}                           | Gibt Details zu einer bestimmten Gruppe zurück                                        |
-| PUT     | /gruppen/{id}                           | Aktualisiert die Informationen einer bestimmten Gruppe                                |
-| DELETE  | /gruppen/{id}                           | Löscht eine bestimmte Gruppe                                                          |
-| GET     | /gruppen/{id}/mitglieder                | Gibt eine Liste aller Mitglieder einer bestimmten Gruppe zurück                       |
-| POST    | /gruppen/{id}/mitglieder                | Fügt ein neues Mitglied zu einer bestimmten Gruppe hinzu                              |
-| DELETE  | /gruppen/{id}/mitglieder/{mitgliedId}   | Entfernt ein Mitglied aus einer bestimmten Gruppe                                     |
+
+| Methode | Endpunkt                              | Beschreibung                                                           | Benötigte Daten                            |
+| ------- | ------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------ |
+| GET     | /benutzer                             | Gibt eine Liste aller Benutzer zurück                                  | -                                          |
+| POST    | /benutzer                             | Erstellt einen neuen Benutzer                                          | Benutzerinformationen (Name, E-Mail, etc.) |
+| GET     | /benutzer/{id}                        | Gibt Details zu einem bestimmten Benutzer zurück                       | Benutzer-ID                                |
+| PUT     | /benutzer/{id}                        | Aktualisiert die Informationen eines bestimmten Benutzers              | Benutzer-ID, Aktualisierte Daten           |
+| DELETE  | /benutzer/{id}                        | Löscht einen bestimmten Benutzer                                       | Benutzer-ID                                |
+| GET     | /chat/{benutzerid}                    | Gibt eine Liste aller Nachrichten zwischen bestimmten Benutzern zurück | Benutzer-ID                                |
+| POST    | /chat/{benutzerid}                    | Sendet eine neue Nachricht an einen bestimmten Benutzer                | Benutzer-ID, Nachrichtendaten              |
+| GET     | /gruppen                              | Gibt eine Liste aller Gruppen zurück                                   | -                                          |
+| POST    | /gruppen                              | Erstellt eine neue Gruppe                                              | Gruppendaten (Name, Mitglieder, etc.)      |
+| GET     | /gruppen/{id}                         | Gibt Details zu einer bestimmten Gruppe zurück                         | Gruppen-ID                                 |
+| PUT     | /gruppen/{id}                         | Aktualisiert die Informationen einer bestimmten Gruppe                 | Gruppen-ID, Aktualisierte Daten            |
+| DELETE  | /gruppen/{id}                         | Löscht eine bestimmte Gruppe                                           | Gruppen-ID                                 |
+| GET     | /gruppen/{id}/mitglieder              | Gibt eine Liste aller Mitglieder einer bestimmten Gruppe zurück        | Gruppen-ID                                 |
+| POST    | /gruppen/{id}/mitglieder              | Fügt ein neues Mitglied zu einer bestimmten Gruppe hinzu               | Gruppen-ID, Mitgliedsdaten                 |
+| DELETE  | /gruppen/{id}/mitglieder/{mitgliedId} | Entfernt ein Mitglied aus einer bestimmten Gruppe                      | Gruppen-ID, Mitglied-ID                    |
 
 Diese Tabelle deckt die grundlegenden Funktionen Ihrer Anwendung ab, wie Benutzerverwaltung, Produktverwaltung und Nachrichtensystem. Sie können diese Tabelle erweitern oder anpassen, um weitere spezifische Funktionen Ihrer Anwendung zu berücksichtigen.
