@@ -6,9 +6,9 @@ Die Projektidee ist die Entwicklung einer MultiUser Messaging Seite, auf der Ben
 
 ## Entitäten
 
-- **Benutzer**: Enthält Informationen über die Benutzer wie Benutzer-ID, Name, E-Mail, etc.
+- **Benutzer**: Enthält Informationen über die Benutzer wie Benutzer-ID, Benutzername, E-Mail, Password.
 - **Nachrichten**: Speichert die gesendeten Nachrichten mit Details wie Absender, Empfänger, Zeitstempel, etc.
-- **Gruppen**: Informationen über die verschiedenen Gruppen, die erstellt werden können, einschließlich Gruppenname und Mitglieder.
+- **Gruppen**: Informationen über die verschiedenen Gruppen, die erstellt werden können, einschließlich Gruppenname und Mitglieder, liste von benutzer die admin haben.
 - **Gruppenmitglieder**: Verknüpft Benutzer mit Gruppen und speichert ihre Rollen innerhalb der Gruppe.
 
 ## Motivation
