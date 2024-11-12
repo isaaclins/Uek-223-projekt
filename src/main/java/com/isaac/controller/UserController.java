@@ -4,14 +4,13 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-@Path("/api/benutzer")
-public class BenutzerController {
-    
+@Path("/api/user")
+public class UserController {
+
     @GET
     @Path("/")
     @Produces(MediaType.APPLICATION_JSON)
     public Response getAllUsers() {
-        // Implement logic to return all users
         return Response.ok().build();
     }
 
@@ -48,5 +47,4 @@ public class BenutzerController {
         // Implement logic to delete a user
         return Response.noContent().build();
     }
-
 }
