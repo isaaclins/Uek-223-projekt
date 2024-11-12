@@ -1,4 +1,8 @@
-package main.java.com.isaac.controller;
+package com.isaac.controller;
+
+import javax.ws.rs.*;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 
 @Path("/api/gruppen")
 public class GruppenConroller {
